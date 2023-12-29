@@ -1,6 +1,4 @@
-package com.quiz.entities;
-
-import java.util.List;
+package com.question.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -16,14 +14,13 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Quiz {
+public class Question {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	private String title;
-	
-	transient private List<Question> questions;
+	private String Question;
 
+	private Long quizId;
 }
