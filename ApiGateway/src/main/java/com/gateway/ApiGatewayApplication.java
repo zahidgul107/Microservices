@@ -1,14 +1,14 @@
-package com.question;
+package com.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class QuestionServiceApplication {
+public class ApiGatewayApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(QuestionServiceApplication.class, args);
-		System.err.println("Question Service Started");
+		SpringApplication.run(ApiGatewayApplication.class, args);
+		System.err.println("Api Gateway Started");
 	}
 
 }
