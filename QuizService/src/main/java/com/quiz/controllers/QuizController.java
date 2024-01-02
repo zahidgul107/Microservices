@@ -30,6 +30,7 @@ public class QuizController {
 	
 	@GetMapping
 	public List<Quiz> getAll() {
+		System.err.println("called quiz service==== ");
 		return quizSer.getAll();
 	}
 	
